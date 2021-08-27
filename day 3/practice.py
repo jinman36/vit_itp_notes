@@ -65,8 +65,8 @@ print("My state is: ", my_state_index)
 
 # 4.Using your state index, let's emphasize some importance to it by *upper*casing it.
 # my_state_index.capitalize()
-my_state_index.upper()
-print(my_state_index)
+# us_state[my_state_index].capitalize()
+# print(us_state[my_state_index])
 
 # 5. POOF. You've been promoted to President! Let's add a new state. I like my list to be alphabetical (which it is)
 us_state.insert(7, "Cuba")

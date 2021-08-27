@@ -2,19 +2,23 @@
 
 # EASY
 
-lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 # 1. loop through the lowercase and print each element
-
+    # print(low_letter)
 # 2. loop through the lowercase and print the capitalization of each element
-
+lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# for low_letter in lowercase:
+#     for cap_letter in low_letter:
+        # print(cap_letter.capitalize())
 # MEDIUM
 
 # 1. create a new variable called uppercase with an empty list
-
+uppercase = []
 # 2. loop through the lowercase list
     # 2a. append the capitalization of each element to the uppercase list
-
+for add_list in lowercase:
+    add_list.append(uppercase)
+print(uppercase)
 # HARD
 
 # A safe password has a minimum of (1) uppercase, (1) lowercase, (1) number, (1) special character.
