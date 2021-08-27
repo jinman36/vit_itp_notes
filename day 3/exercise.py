@@ -7,11 +7,6 @@
     # print(low_letter)
 # 2. loop through the lowercase and print the capitalization of each element
 
-lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-uppercase = []
-
-for letter in lowercase:
-    uppercase.append(letter.capitalize())  
 # print(uppercase)
 
 
@@ -33,9 +28,11 @@ for letter in lowercase:
 
 # A safe password has a minimum of (1) uppercase, (1) lowercase, (1) number, (1) special character.
 
-password = "MySuperSafePassword!@34"
-
+lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+uppercase = []
 special_char = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')']
+for letter in lowercase:
+    uppercase.append(letter.capitalize())  
 
 # 1. create the following variables and assign them Booleans as False
 has_uppercase = False
@@ -47,20 +44,39 @@ has_special_char = False
 # OR you can create a new list variable of the string password
 # using list(string) NOTE: assign it a new variable as such:
 # password_list = list(password) prior to looping.
+# password = "MySuperSafePassword!@34"
 
-for password_list in password:
+import re
+while True:
+    
+    input_password = input("Please enter a password")
+    is_valid = False
 
-    #     continue
-    # elif password_list != has_lowercase:
-    #     print('lowercase break')
-    # print(password_list)
+    if len(input_password)<10 or len(input_password)>23:
+        print('password is between 10 - 23')
+        continue
+    elif not re.search(uppercase, input_password):
+        print('it should contain 1 uppercase')
+        # has_uppercase = True
+        continue
+    elif not re.search(lowercase, input_password):
+        print('it should contain 1 has_lowercase')
+        # has_lowercase = True
+        continue
+    elif not re.search('[1-9]', input_password):
+        print('it should contain 1 number')
+        # has_number = True
+        continue
+    elif not re.search(special_char, input_password):
+        print('it should contain 1 Special Character')
+        # has_special_char = True
+        continue
+    else:
+        is_valid = True
+        break
 
-# print(len(password))
-
-print(has_uppercase)
-print(has_lowercase)
-
-
+if(is_valid):
+    print("Valid Password")
 
 
 # 3. For each iteration of the loop, create a if statement
