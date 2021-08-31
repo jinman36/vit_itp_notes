@@ -71,8 +71,9 @@ elif has_number != True:
 else:
   print("Password is valid")
 
-# Original proof of life logic
 
+
+# Intended solution
 # for letter in password:
 #   if letter in lowercase:
 #     has_lowercase = True
@@ -80,13 +81,17 @@ else:
 #     has_uppercase = True
 #   elif letter in special_char:
 #     has_special_char = True
-#   elif letter in range(10):
+#   elif int(letter) in range(10):
 #     has_number = True
-#   else:
-#     print('All items should be true now')
+# 
+# final_result = has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True
+# if final_result == True:
+#   print("Good password")
+# else:
+#   print("too weak")
 
 
-
+# Original proof of life logic
 print(has_uppercase)
 print(has_lowercase)
 print(has_special_char)
@@ -103,7 +108,6 @@ print(has_number)
 # 4. do a final check to see if all of your variables are TRUE
 # by using the AND operator for all 4 conditions. (This is done for you, uncomment below)
 
-# final_result = has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True
 
 # NOTE: we can shorthand this by just checking if the variable exists (returns True)
 #final_result_shorthand = has_uppercase and has_lowercase and has_number and has_special_char
