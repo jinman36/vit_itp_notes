@@ -31,16 +31,16 @@ password = input("Please check if your password is valid: ")
 # Manual check lists
 lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 uppercase = []
-# number_list = []
+number_list = []
 special_char = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')']
 
 # loops to populate manual lists
 for letter in lowercase:
   uppercase.append(letter.capitalize())
 
-# number_range = range(0, 10)
-# for num in number_range:
-#   number_list.append(str(num))
+number_range = range(0, 10)
+for num in number_range:
+  number_list.append(str(num))
 
 # Validation booleans
 has_uppercase = False
@@ -49,44 +49,49 @@ has_special_char = False
 has_number = False
 
 # logic for password checking
-# if any(element1 in uppercase for element1 in password):
-#     has_uppercase = True
-# if any(element2 in lowercase for element2 in password):
-#     has_lowercase = True
-# if any(element3 in special_char for element3 in password):
-#     has_special_char = True
-# if any(element4 in number_list for element4 in password):
-#     has_number = True
+if any(element1 in uppercase for element1 in password):
+    has_uppercase = True
+if any(element2 in lowercase for element2 in password):
+    has_lowercase = True
+if any(element3 in special_char for element3 in password):
+    has_special_char = True
+if any(element4 in number_list for element4 in password):
+    has_number = True
 
 
 # validation readout for output - Nightmare Flex Goal
-# if has_uppercase != True:
-#   print("Pasword Requires 1 Upper Case letter")
-# elif has_lowercase != True:
-#   print("Pasword Requires 1 Lower Case letter")
-# elif has_special_char != True:
-#   print("Pasword Requires 1 Special character")
-# elif has_number != True:
-#   print("Pasword Requires 1 Number")
+if has_uppercase != True:
+  print("Pasword Requires 1 Upper Case letter")
+elif has_lowercase != True:
+  print("Pasword Requires 1 Lower Case letter")
+elif has_special_char != True:
+  print("Pasword Requires 1 Special character")
+elif has_number != True:
+  print("Pasword Requires 1 Number")
+else:
+  print("Password is valid")
+
+
+
+# Intended solution
+# for letter in password:
+#   if letter in lowercase:
+#     has_lowercase = True
+#   elif letter in uppercase:
+#     has_uppercase = True
+#   elif letter in special_char:
+#     has_special_char = True
+#   elif int(letter) in range(10):
+#     has_number = True
+# 
+# final_result = has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True
+# if final_result == True:
+#   print("Good password")
 # else:
-#   print("Password is valid")
+#   print("too weak")
+
 
 # Original proof of life logic
-
-for letter in password:
-  if letter in lowercase:
-    has_lowercase = True
-  elif letter in uppercase:
-    has_uppercase = True
-  elif letter in special_char:
-    has_special_char = True
-  elif letter in range(10):
-    has_number = True
-  else:
-    print('All items should be true now')
-
-
-
 print(has_uppercase)
 print(has_lowercase)
 print(has_special_char)
@@ -103,7 +108,6 @@ print(has_number)
 # 4. do a final check to see if all of your variables are TRUE
 # by using the AND operator for all 4 conditions. (This is done for you, uncomment below)
 
-# final_result = has_uppercase == True and has_lowercase == True and has_number == True and has_special_char == True
 
 # NOTE: we can shorthand this by just checking if the variable exists (returns True)
 #final_result_shorthand = has_uppercase and has_lowercase and has_number and has_special_char
