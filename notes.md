@@ -1,5 +1,13 @@
 ## Data structures - dictionaries
 
+Links
+https://www.w3schools.com/python/python_ref_keywords.asp
+https://www.w3schools.com/python/python_ref_functions.asp
+https://www.w3schools.com/python/python_ref_string.asp
+https://www.w3schools.com/python/python_ref_list.asp
+https://www.w3schools.com/python/python_ref_dictionary.asp
+
+-------------
 - control + D will select all matching words in the folder
 
 - Still in the basics but doing things that will get into the complicated parts
@@ -42,3 +50,5 @@ if "Mustang" in car.values():
 ---------------------------------------
 - Update will assign a value if the item dosent exist
 car.update({"year": 2020})
+
+
