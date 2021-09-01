@@ -15,6 +15,6 @@ person_1.update({"last_name":"Doo"})
 # update person_1 favorite_snack to "Scooby Snacks"
 person_1.update({"favorite_snack": "Scooby Snacks"})
 # Remove the "wears_glasses" key:value from person_1
-print(person_1.items(person_1[0][1]))
+print(person_1[0][1])
 
 
