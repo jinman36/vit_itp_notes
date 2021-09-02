@@ -17,3 +17,4 @@ def update_movies(new_movies):
 
 update_movies(new_releases)
 print(my_movies)
+
