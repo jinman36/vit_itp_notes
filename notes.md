@@ -48,7 +48,7 @@ print(z)
 if "Mustang" in car.values():
   print("Yes, 'model' is one of the keys in the car dictionary")
 ---------------------------------------
-- Update will assign a value if the item dosent exist
+- Update will assign a value if the item doesnt exist
 car.update({"year": 2020})
 
 
