@@ -3,7 +3,7 @@
 # Functions can take lists and dictionaries as arguments. 
 
 myToons = {
-    "Tauren": "Druid",
+    "Tauren": "DRUID",
     "Elf": "Mage",
     "Undead": "Warrior",
     "Troll": "Hunter"
@@ -36,7 +36,7 @@ def startGame():
     intro()
     pickToon(myToons)
 
-startGame()
+# startGame()
 
 # The Python return statement is a key component of functions and methods. You can use the return statement to make your functions send Python objects back to the caller code. These objects are known as the function’s return value. You can use them to perform further computation in your programs.  The Python return statement is a special statement that you can use inside a function or method to send the function’s result back to the caller. A return statement consists of the return keyword followed by an optional return value.
 
@@ -85,7 +85,7 @@ print("num1 is ", num1)
 
 num2 = math.pi
 print("num2 is ", num2)
-
+print(len(str(num2)))
 #Random additonal facts:
 # The sys.exit() function will immediately quit your program.
 
