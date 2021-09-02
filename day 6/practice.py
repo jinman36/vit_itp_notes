@@ -14,9 +14,9 @@ def use_poke_ball():
 # location = input('where did you catch it?')
 
 def catch_pokemon(pokemon, location):
-  print("You caught a ", pokemon, "in the", location)
+  print("You caught a", pokemon, "in the", location)
 
-catch_pokemon("squirttle", "school")
+catch_pokemon(pokemon, location)
 
 #Write a SINGLE function defined as catchem_all that runs the TWO function calls you already wrote.  When you run the catchem_all function it should run the TWO functions and print:
 #"You threw a poke ball!"
