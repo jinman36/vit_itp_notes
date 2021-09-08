@@ -52,3 +52,4 @@ if "Mustang" in car.values():
 car.update({"year": 2020})
 
 
+- to view PIP package type 'which pip3'
