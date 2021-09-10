@@ -72,3 +72,7 @@ OpenPyXL
 -download and install opnepyxl using pip
   - pip install openpyxl
 import openpyxl
+
+- regex - course on udemy - know how to handle this when you encounter it in the wild.
+
+- Beautiful soup!!! - Web scraping

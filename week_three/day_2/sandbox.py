@@ -13,10 +13,10 @@ working_sheet = sheet_name
 
 print(working_sheet)
 
-for i in range(1, working_sheet.max_row+1):
-  pop = "D" + str(i)
-  population = working_sheet[pop]
-  print(type(population.value))
+# for i in range(1, working_sheet.max_row+1):
+#   pop = "D" + str(i)
+#   population = working_sheet[pop]
+#   print(population.value)
 
 
   
