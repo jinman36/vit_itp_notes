@@ -19,5 +19,20 @@
 # create dictionary
   # send json object to dictonary
 
+# Function Body
+  # get Json datat
+    # convert to text file
+# iterate over text File
+  # for each pokemon that we iterate over
+    # append pokemon 
+
 # Output
   # workbook
+
+
+pokemon = {
+  bulbasour : {
+    'name': 'pokemon_name',
+    'abilities' : ['ability1']
+  }
+}
