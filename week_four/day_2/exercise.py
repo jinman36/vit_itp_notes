@@ -84,11 +84,11 @@ for char in result:
             #assign dictionary values to rows & cols
                 #Write Name to Cell
                 #Write Abilities to Cell
-df = pd.DataFrame(data=name_dict, index=[1])
+# df = pd.DataFrame(data=name_dict, index=[1])
 
-df = (df.T)
+# df = (df.T)
 
-print(df)
+# print(df)
 
 sheet['A1'] = 'Name'
 sheet['B1'] = 'Ability'
